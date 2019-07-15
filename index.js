@@ -1,6 +1,6 @@
 var takeANumber = (arr, value) => {
   const idx = arr.indexOf(value)
-  if (idx > -1) {
+  if (idx === -1) {
     arr.push(value)
     return `Welcome, ${value}. You are number ${arr.length} in line`
   }
