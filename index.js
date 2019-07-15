@@ -8,12 +8,12 @@ var takeANumber = (arr, value) => {
 }
 
 var nowServing = (arr) => {
-  if (!!arr) return "There is nobody waiting to be served!"
+  if (arr.length === 0) return "There is nobody waiting to be served!"
   return `Currently serving ${arr.pop()}`
 }
 
 const currentLine = (arr) => {
-  if (!!arr) return 'The line is currently empty.'
+  if (arr.length === 0) return 'The line is currently empty.'
   const lined = arr.map((val, idx) => `${idx + 1}. ${val}`).join(', ')
   return `The line is currently: ${lined}`
 }
