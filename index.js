@@ -1,6 +1,10 @@
 var takeANumber = (arr, value) => {
+  const isExist = arr.includes(value)
+  if (!isExist) {
+    
+  }
   arr.push(value)
-  return `Welcome, ${value}. You are number 1 in line`
+  return `Welcome, ${value}. You are number ${arr.length} in line`
 }
 
 /*
